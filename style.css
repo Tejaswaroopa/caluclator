@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #d9f4ff;
+}
+
+hr {
+    height: 2px;
+    background-color: aqua;
+}
+
+h1 {
+    text-align: center;
+    color: #42474b;
+    font-size: 2.5em;
+    padding: 1em;
+}
+
+.wrapper {
+    display: grid;
+    height: 600px;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4px;
+}
+
+.container {
+    width: 425px;
+    height: 600px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #000000;
+    margin: 0 auto;
+    padding: auto;
+    box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.inputArea {
+    background-color: #5b6d7c;
+    grid-column: 1/2;
+}
+
+input[type="text"] {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 20px;
+    font-size: 2em;
+    background-color: #dad8d8;
+    text-align: right;
+    border: 2px solid #25292c;
+    border-radius: 8px;
+    color: black;
+    width: 94%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+input[type="text"]:disabled {
+    background-color: #dad8d8;
+    color: black;
+}
+
+.btnr1, .btnr2 {
+    background: #25292c;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnr1 > input, .btnr2 > input {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2em;
+    margin: 0.5em;
+}
+
+.btnC > input {
+    color: #ff7a00 !important;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background: url('new_pic.jpg') no-repeat;
+    background-size: cover;
+}
